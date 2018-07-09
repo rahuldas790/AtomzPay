@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="printertype">
+        <item></item>
+        <item>Chinese-English Printer</item>
+        <item>Multi-language Printer</item>
+    </string-array>
+    
+    <string-array name="led_item">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="typeOfGoodsSpinner_array">
+        <item>Truck</item>
+        <item>Saloon</item>
+        <item>SUV</item>
+        <item>Convertible</item>
+    </string-array>
+
+    <string-array name="paymentMethodSpinner_array">
+        <item>Cash</item>
+        <item>Mobile Money</item>
+    </string-array>
+
+    <string-array name="paymentNetworkSpinner_array">
+        <item>--Select--</item>
+        <item>MTN Mobile Money</item>
+        <item>Vodafone Cash</item>
+        <item>Tigo Cash</item>
+        <item>Airtel Money</item>
+
+    </string-array>
+       
+</resources>

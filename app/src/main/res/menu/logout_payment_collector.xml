@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/paymentCollectionOverflowMenu"
+        android:icon="@drawable/ic_more_vert_black_24dp"
+        app:showAsAction="always"
+        android:title="Menu">
+
+        <menu>
+
+            <item android:id="@+id/sync"
+                app:showAsAction="always"
+                android:title="Sync Data" />
+
+            <item android:id="@+id/logout"
+                app:showAsAction="always"
+                android:title="Logout" />
+
+
+        </menu>
+    </item>
+
+</menu>

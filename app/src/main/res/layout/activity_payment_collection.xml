@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/payback"
+    tools:context=".PaymentCollectionActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:text="ATOMZ PAYMENT COLLECTION FORM"
+            android:textAlignment="center"
+            android:textColor="#607d8b"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/my_border"
+            android:text="Agent ID: "
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/displayAgentID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="0000000"
+            android:textColor="#607d8b"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/my_border"
+            android:text="Agent Name: "
+            app:layout_constraintEnd_toEndOf="@+id/displayAgentID"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/displayAgentID"
+            app:layout_constraintTop_toBottomOf="@+id/displayAgentID" />
+
+        <TextView
+            android:id="@+id/displayAgentName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="John Doe"
+            android:textColor="#607d8b"
+            app:layout_constraintEnd_toEndOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/my_border"
+            android:text="Location: "
+            app:layout_constraintEnd_toEndOf="@+id/displayAgentName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/displayAgentName"
+            app:layout_constraintTop_toBottomOf="@+id/displayAgentName" />
+
+        <TextView
+            android:id="@+id/displayLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="00000"
+            android:textColor="#607d8b"
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/chooseTypeOfGoods"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/my_border"
+            android:text="Select Vehicle Type: "
+            app:layout_constraintEnd_toEndOf="@+id/displayLocation"
+            app:layout_constraintStart_toStartOf="@+id/displayLocation"
+            app:layout_constraintTop_toBottomOf="@+id/displayLocation" />
+
+        <Spinner
+            android:id="@+id/typeOfGoodsSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/chooseTypeOfGoods"
+            app:layout_constraintTop_toBottomOf="@+id/chooseTypeOfGoods" />
+
+        <TextView
+            android:id="@+id/normalAmountLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/my_border"
+            android:text="Amount Charged: "
+            app:layout_constraintEnd_toEndOf="@+id/chooseTypeOfGoods"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/chooseTypeOfGoods"
+            app:layout_constraintTop_toBottomOf="@+id/typeOfGoodsSpinner" />
+
+        <TextView
+            android:id="@+id/amountToPay_Normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint=" GHS 00"
+            android:text="0.00"
+            android:textColor="#607d8b"
+            app:layout_constraintEnd_toEndOf="@+id/normalAmountLabel"
+            app:layout_constraintStart_toStartOf="@+id/normalAmountLabel"
+            app:layout_constraintTop_toBottomOf="@+id/normalAmountLabel" />
+
+
+        <android.support.constraint.Barrier
+            android:id="@+id/labelBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="amountToPay_Normal" />
+
+        <TextView
+            android:id="@+id/choosePaymentMethodLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/my_border"
+            android:text="Choose Payment Method: "
+            app:layout_constraintEnd_toEndOf="@+id/displayLocation"
+            app:layout_constraintStart_toStartOf="@+id/chooseTypeOfGoods"
+            app:layout_constraintTop_toBottomOf="@+id/labelBarrier" />
+
+        <Spinner
+            android:id="@+id/paymentMethodSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/choosePaymentMethodLabel"
+            app:layout_constraintTop_toBottomOf="@+id/choosePaymentMethodLabel" />
+
+        <TextView
+            android:id="@+id/chooseNetworkLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/my_border"
+            android:text="Select Mobile Money Network: "
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/choosePaymentMethodLabel"
+            app:layout_constraintStart_toStartOf="@+id/choosePaymentMethodLabel"
+            app:layout_constraintTop_toBottomOf="@+id/paymentMethodSpinner" />
+
+        <Spinner
+            android:id="@+id/paymentNetworkSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/chooseNetworkLabel"
+            app:layout_constraintTop_toBottomOf="@+id/chooseNetworkLabel" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/paymentPhoneNumTextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/chooseNetworkLabel"
+            app:layout_constraintStart_toStartOf="@+id/chooseNetworkLabel"
+            app:layout_constraintTop_toBottomOf="@+id/paymentNetworkSpinner">
+
+            <EditText
+                android:id="@+id/paymentPhoneNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add Phone Number To Use For Payment"
+                android:inputType="phone" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/vodaVoucherTextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/chooseNetworkLabel"
+            app:layout_constraintStart_toStartOf="@+id/chooseNetworkLabel"
+            app:layout_constraintTop_toBottomOf="@+id/paymentPhoneNumTextInputLayout">
+
+            <EditText
+                android:id="@+id/vodafoneVoucher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Vodafone Voucher"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="320dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:elevation="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="makePayment"
+            android:padding="12dp"
+            android:text="Make Payment"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vodaVoucherTextInputLayout"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:text="Copyright\u00A9 Vanguard Technology Ltd."
+            android:textAlignment="center"
+            android:textColor="@color/_grey_605E5C"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/sendButton"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/sendButton"
+            app:layout_constraintTop_toBottomOf="@+id/sendButton" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
